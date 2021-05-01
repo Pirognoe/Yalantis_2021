@@ -127,3 +127,30 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+/.idea/vcs.xml
+/.idea/.gitignore
+.idea/Yalantis_Python_2021_IPYROG.iml
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+yalantis_venv/Include/
+yalantis_venv/Scripts/Activate.ps1
+yalantis_venv/Scripts/activate
+yalantis_venv/Scripts/activate.bat
+yalantis_venv/Scripts/deactivate.bat
+yalantis_venv/Scripts/django-admin.exe
+yalantis_venv/Scripts/django-admin.py
+yalantis_venv/Scripts/easy_install-3.7-script.py
+yalantis_venv/Scripts/easy_install-3.7.exe
+yalantis_venv/Scripts/easy_install-script.py
+yalantis_venv/Scripts/easy_install.exe
+yalantis_venv/Scripts/pip-script.py
+yalantis_venv/Scripts/pip.exe
+yalantis_venv/Scripts/pip3-script.py
+yalantis_venv/Scripts/pip3.7-script.py
+yalantis_venv/Scripts/pip3.7.exe
+yalantis_venv/Scripts/pip3.exe
+yalantis_venv/Scripts/python.exe
+yalantis_venv/Scripts/pythonw.exe
+yalantis_venv/Scripts/sqlformat.exe
+yalantis_venv/pyvenv.cfg
