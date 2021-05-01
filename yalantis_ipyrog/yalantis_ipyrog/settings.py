@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'yalantis_api.apps.YalantisApiConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
