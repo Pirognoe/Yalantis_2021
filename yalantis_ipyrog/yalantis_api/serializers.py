@@ -5,4 +5,4 @@ from .models import TrainingCourse
 class TrainingCourseSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = TrainingCourse
-        fields = ('name', 'alias')
+        fields = ('id', 'name', 'start_date', 'end_date', 'number_of_lectures')
