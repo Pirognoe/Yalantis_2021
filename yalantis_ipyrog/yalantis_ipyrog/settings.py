@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'yalantis_api.apps.YalantisApiConfig',
     'rest_framework',
+    'django_filters',
 ]
 
 MIDDLEWARE = [

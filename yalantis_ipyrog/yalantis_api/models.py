@@ -1,4 +1,5 @@
 from django.db import models
+from django_filters import rest_framework as filters
 
 
 # Create your models here.
@@ -15,3 +16,12 @@ class TrainingCourse(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class TrainingCourseFilter(filters.FilterSet):
+    start_date = filters.DateFromToRangeFilter()
+    end_date = filters.DateFromToRangeFilter()
+
+    class Meta:
+        model = TrainingCourse
+        fields = ['start_date', 'end_date']

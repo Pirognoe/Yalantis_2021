@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from rest_framework import viewsets
-
+from rest_framework import viewsets, filters
+from django_filters.rest_framework import DjangoFilterBackend
 from .serializers import TrainingCourseSerializer
 from .models import TrainingCourse
 
@@ -8,6 +8,9 @@ from .models import TrainingCourse
 class TrainingCourseViewSet(viewsets.ModelViewSet):
     queryset = TrainingCourse.objects.all().order_by('name')
     serializer_class = TrainingCourseSerializer
+    filter_backends = (filters.SearchFilter, DjangoFilterBackend)
+    filterset_fields = ('start_date', 'end_date',)
+    search_fields = ('name',)
 
     def get_queryset(self):
         """
